@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=<?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_ENCODING=F3::get('ENCODING'))):($_ENCODING=F3::get('ENCODING'))) ; ?>"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_BASE=F3::get('BASE'))):($_BASE=F3::get('BASE'))) ; ?>/min?base=<?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_GUI=F3::get('GUI'))):($_GUI=F3::get('GUI'))) ; ?>css/&amp;files=reset.css,demo.css"/>
+	<title><?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_layout_Sitename=F3::get('layout_Sitename'))):($_layout_Sitename=F3::get('layout_Sitename'))) ; ?></title>
+	<base href="<?php echo  $_BASE ; ?>/"/>
+</head>
+<body> 
+	<div id="header">
+		<h2><?php echo  $_layout_Sitename ; ?></h2>
+		<div id="menu">
+			<ul>
+				<?php if (is_array((F3::get('ESCAPE')?F3::htmlencode(($_menu=F3::get('menu'))):($_menu=F3::get('menu'))))):foreach (((F3::get('ESCAPE')?F3::htmlencode(($_menu=F3::get('menu'))):($_menu=F3::get('menu')))?:array()) as $_key=>$_option):?>
+					<li>
+						<a href="<?php echo  $_option ; ?>" title="<?php echo  $_key ; ?>"<?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_pagetitle=F3::get('pagetitle'))):($_pagetitle=F3::get('pagetitle')))==$_key?' class="active"':'' ; ?>><?php echo  $_key ; ?></a>
+					</li>
+				<?php endforeach;endif;?></p>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Powered by <?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_VERSION=F3::get('VERSION'))):($_VERSION=F3::get('VERSION'))) ; ?></title>
+	<style type="text/css">		
+                <?php echo  Web::minify('ui/css/',array('welcome.css'),FALSE) ; ?>
+	</style>
+</head>
+<body>
+    <h2><?php echo  (F3::get('ESCAPE')?F3::htmlencode(($_pagetitle=F3::get('pagetitle'))):($_pagetitle=F3::get('pagetitle'))) ; ?></h2>
+    <br /><br />
+    <h1><?php echo (F3::get('ESCAPE')?F3::htmlencode(($_bob=F3::get('bob'))):($_bob=F3::get('bob'))); ?></h1> 
+    <p>
+        Hello this is the sound of thunder.
+    </p>
+    
+    
+    <div>
+        
+    </div>
+    
+</body>
+</html>
+	</div>
+	<div id="footer">
+		<p class="center">This site is powered by <a href="http://fatfree.sourceforge.net">F3</a> - the common sense PHP framework</p>
+	</div>
+</body>
+</html>

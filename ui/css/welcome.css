@@ -1,0 +1,13 @@
+/* 
+    Document   : welcome
+    Created on : Nov 8, 2012, 3:02:47 PM
+    Author     : nmallow.ctr
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+h1{color:#09c;}
